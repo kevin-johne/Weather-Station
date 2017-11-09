@@ -1,8 +1,8 @@
-#Heathrow Weather Station
+# Heathrow Weather Station
 
 This website is the result of an assignment.
 
-##Assignment Description
+## Assignment Description
 The end user would like to visualise the Heathrow weather station information on a graph. The heathrow-weatherstation.json file contains the information on temperature max/min, rain fall in mm and sunshine hours. This information starts Jan 1958 and ends Dec 2014.
 
 The picture "the_graph_of_fields.jpg" shows the layout and controls the end user would like in a web browser. The end user will select one of the fields temp max/min, rainfall or sunshine hours. The end user will enter a start and
@@ -15,10 +15,10 @@ The deliverable: - A single static html file or a zip file containing an index.h
 
 Please implement this using React.
 
-##Requirements
+## Requirements
 Node version 6 or higher
 
-##UP and Running
+## UP and Running
 First install all dependencies `npm install`
 
 Run the App `npm start`
@@ -27,10 +27,10 @@ After the Server is up, put the `localhost:3000` in the web browser bar.
 
 Have fun exploring the temperature change, the amount of sunlight in the winter and rainfall in the summer.
 
-##Testing
+## Testing
 Run Jest tests `npm test`
 
-##Folder Structure
+## Folder Structure
 
 ```
 /src
@@ -45,7 +45,7 @@ Run Jest tests `npm test`
    \- data              (Data and Configuration e.x. weather data, form configuration)
 ``` 
 
-##Notes
+## Notes
 To keep requirements and dependency low I avoided using SASS/LESS.
 
 
