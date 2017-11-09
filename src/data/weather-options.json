@@ -1,0 +1,18 @@
+[
+  {
+    "label": "min °C",
+    "value": "tmin_C"
+  },
+  {
+    "label": "max °C",
+    "value": "tmax_C"
+  },
+  {
+    "label": "Sun in h",
+    "value": "sunshine_hours"
+  },
+  {
+    "label": "Rain mm",
+    "value": "rain_mm"
+  }
+]

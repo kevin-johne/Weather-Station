@@ -1,0 +1,11 @@
+.chart {
+  position: relative;
+}
+
+.chart__label-y {
+  position: absolute;
+  bottom: 50%;
+  left: 1em;
+  transform-origin: left bottom;
+  transform: rotate(-90deg) translateX(-50%);
+}

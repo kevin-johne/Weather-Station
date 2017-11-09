@@ -1,0 +1,77 @@
+label {
+  display: inline-block;
+  cursor: pointer;
+  min-height: 2em;
+}
+
+input {
+  display: block;
+  border: none;
+  height: 2em;
+}
+
+input[type="radio"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  cursor: pointer;
+}
+input[type="radio"] + label {
+  position: relative;
+  padding: .5em .7em;
+  text-align: center;
+  font-size: .9em;
+  transition: color 0s ease-in;
+}
+
+input[type="radio"] + label::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 2px solid #E71D36;
+  background: linear-gradient(to right, #E71D36 0%, #E71D36 50%, #FDFFFC 50%);
+  background-position: right center;
+  background-size: 210% 100%;
+  background-repeat: no-repeat;
+  transition: background 0s ease-in;
+}
+
+input[type="radio"]:checked + label {
+  color: #FDFFFC;
+  transition-duration: .2s;
+}
+
+input[type="radio"]:checked + label::before {
+  background-position: left center;
+  transition-duration: .2s;
+}
+
+select {
+  height: 2em;
+  cursor: pointer;
+  font-size: .9em;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.input-group .input-row:not(:first-of-type) label::before {
+  border-left: 0;
+}
+
+.input-group .input-row {
+  margin: 0;
+}
+
+@media (min-width: 800px) {
+  form {
+    box-shadow: 0 0 6px #011627;
+    border-bottom: 2px solid #E71D36;
+    padding: 1.5em;
+  }
+}

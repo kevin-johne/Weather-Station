@@ -1,0 +1,39 @@
+.date-field {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.date-field__label {
+  position: absolute;
+  display: inline-block;
+  top: -.5em;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: .7em;
+  background-color: white;
+  color: #E71D36;
+}
+
+.date-field__select-group {
+  padding: .5em;
+  border: 2px solid #E71D36;
+  margin-bottom: .5em;
+}
+
+.date-field__select {
+  appearance: none;
+  padding: .5em;
+  text-align: center;
+  border: none;
+  color: #E71D36;
+  background: transparent;
+}
+
+.date-field__select option {
+  color: #303030;
+}
+
+.input-group .date-field:not(:first-of-type) .date-field__select-group {
+  border-left: 0;
+}
